@@ -19,7 +19,7 @@ public class CarpetTubeAdditionSettings {
 
     @Rule(
             //#if MC >= 11900
-            categories = {RuleCategory.FEATURE, CTA, PORT}
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
             //$$ desc = "Make fungus grow by random tick.",
             //$$ category = {RuleCategory.FEATURE, CTA, PORT}
@@ -50,4 +50,14 @@ public class CarpetTubeAdditionSettings {
             options = {"1", "7", "8", "14", "15"}
     )
     public static int fungusGrowthMinLightLevel = 8;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "Use shears item to get the real tall plant items.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean harvestableTallPlant = false;
 }
