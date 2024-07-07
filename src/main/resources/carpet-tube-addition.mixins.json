@@ -6,7 +6,9 @@
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
     "access.block.ObServerBlockMixin",
-    "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin"
+    "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
+    "rule.growableFungus.AbstractBlockMixin",
+    "rule.growableFungus.FungusBlockMixin"
   ],
   "client": [
   ],
