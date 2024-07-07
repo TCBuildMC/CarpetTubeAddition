@@ -25,6 +25,6 @@ public class CarpetTubeAdditionMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        CarpetServer.manageExtension(CarpetTubeAdditionServer.getInstance());
+        CarpetServer.manageExtension(CarpetTubeAddition.getInstance());
     }
 }

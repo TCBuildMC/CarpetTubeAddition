@@ -5,6 +5,8 @@
   "plugin": "xyz.tcbuildmc.minecraft.carpet.util.mixin.CarpetTubeAdditionMixinPlugin",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
+    "access.block.ObServerBlockMixin",
+    "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin"
   ],
   "client": [
   ],

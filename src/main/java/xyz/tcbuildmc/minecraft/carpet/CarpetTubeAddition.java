@@ -10,10 +10,10 @@ import net.minecraft.command.CommandRegistryAccess;
 
 import net.minecraft.server.command.ServerCommandSource;
 
-public class CarpetTubeAdditionServer implements CarpetExtension {
-    private static final CarpetTubeAdditionServer INSTANCE = new CarpetTubeAdditionServer();
+public class CarpetTubeAddition implements CarpetExtension {
+    private static final CarpetTubeAddition INSTANCE = new CarpetTubeAddition();
 
-    public static CarpetTubeAdditionServer getInstance() {
+    public static CarpetTubeAddition getInstance() {
         return INSTANCE;
     }
 
