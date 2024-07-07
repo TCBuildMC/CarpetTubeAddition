@@ -30,13 +30,22 @@ public abstract class TallPlantBlockMixin {
     )
     private void cta$harvestableTallPlant$onBreakPlant(BlockState state, World world, BlockPos pos, BlockEntity blockEntity, Entity entity, ItemStack itemStack) {
         if (CarpetTubeAdditionSettings.harvestableTallPlant &&
-                itemStack.isOf(Items.SHEARS) &&
+                cta$harvestableTallPlant$isValidItem(itemStack) &&
                 cta$harvestableTallPlant$isValidBlock(state)) {
 
             Block.dropStack(world, pos, state.getBlock().asItem().getDefaultStack());
         } else {
             Block.dropStacks(state, world, pos, blockEntity, entity, itemStack);
         }
+    }
+
+    @Unique
+    private boolean cta$harvestableTallPlant$isValidItem(ItemStack stack) {
+        //#if MC >= 11700
+        return stack.isOf(Items.SHEARS);
+        //#else
+        //$$ return stack.isItemEqual(Items.SHEARS.getDefaultStack());
+        //#endif
     }
 
     @Unique
