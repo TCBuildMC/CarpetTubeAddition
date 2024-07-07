@@ -4,29 +4,40 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "Template for my fabric mods",
+  "description": "A Carpet mod addition.",
   "authors": [
-    "Fallen_Breath"
+    "TCBuildMC"
+  ],
+  "contributors": [
+    "Block_Mrlimr267"
   ],
   "contact": {
-    "homepage": "https://modrinth.com",
-    "sources": "https://github.com/Fallen-Breath/fabric-mod-template"
+    "homepage": "https://github.com/TCBuildMC",
+    "sources": "https://github.com/TCBuildMC/CarpetTubeAddition",
+    "issues": "https://github.com/TCBuildMC/CarpetTubeAddition/issues"
   },
 
-  "icon": "assets/template_mod/icon.png",
+  "icon": "assets/carpet-tube-addition/icon.png",
+  "license": "lgplv3-or-later",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.fallenbreath.template_mod.TemplateMod"
+      "xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionMod::onInitialize"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "carpet-tube-addition.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.4",
+    "fabricloader": ">=0.15",
+    "carpet": "*",
+    "conditional-mixin": ">=0.6",
     "minecraft": "${minecraft_dependency}"
+  },
+  "suggests": {
+    "carpet-extra": "*",
+    "carpet-tis-addition": "*"
   }
 }

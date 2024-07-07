@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 //#endif
 
 public class CarpetTubeAdditionMod implements ModInitializer {
-    public static final String MOD_ID = "carpettubeaddition";
+    public static final String MOD_ID = "carpet-tube-addition";
     public static final String MOD_NAME = "CarpetTubeAddition";
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(RuntimeException::new).getMetadata().getVersion().getFriendlyString();
 
