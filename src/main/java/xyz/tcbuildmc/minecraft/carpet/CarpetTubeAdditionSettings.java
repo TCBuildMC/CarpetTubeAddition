@@ -5,7 +5,8 @@ import carpet.api.settings.RuleCategory;
 
 public class CarpetTubeAdditionSettings {
     public static final String CTA = "CTA";
-    public static final String PORT = "PORT";
+    public static final String PORT = "port";
+    public static final String NOT_VANILLA = "not vanilla";
 
     @Rule(
             //#if MC >= 11900
@@ -63,7 +64,7 @@ public class CarpetTubeAdditionSettings {
 
     @Rule(
             //#if MC >= 11900
-            categories = {RuleCategory.EXPERIMENTAL, CTA, PORT}
+            categories = {RuleCategory.EXPERIMENTAL, CTA, PORT, NOT_VANILLA}
             //#else
             //$$ desc = "Make pistons able to move enderchests. Requires `movableBlockEntities`.",
             //$$ category = {RuleCategory.EXPERIMENTAL, CTA, PORT}
@@ -87,6 +88,26 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean movableRespawnAnchor = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.EXPERIMENTAL, CTA, NOT_VANILLA}
+            //#else
+            //$$ desc = "Make pistons able to move end portal frame blocks. Requires `movableBlockEntities`.",
+            //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
+            //#endif
+    )
+    public static boolean movableEndPortalFrame = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.EXPERIMENTAL, CTA, NOT_VANILLA}
+            //#else
+            //$$ desc = "Make pistons able to move spawner blocks. Requires `movableBlockEntities`.",
+            //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
+            //#endif
+    )
+    public static boolean movableSpawners = false;
 
     @Rule(
             //#if MC >= 11900

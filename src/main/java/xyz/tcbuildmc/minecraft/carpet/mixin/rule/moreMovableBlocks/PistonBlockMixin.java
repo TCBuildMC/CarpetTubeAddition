@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 
 /**
- * 移植自 JankAddons
+ * 移植自 JankAddons 和 Carpet Addons Not Found
  */
 @Mixin(PistonBlock.class)
 public abstract class PistonBlockMixin {
@@ -32,6 +32,20 @@ public abstract class PistonBlockMixin {
             if (CarpetTubeAdditionSettings.movableRespawnAnchor && state.isOf(Blocks.RESPAWN_ANCHOR)) {
                 cir.setReturnValue(true);
             }
+
+            if (CarpetTubeAdditionSettings.movableEndPortalFrame && state.isOf(Blocks.END_PORTAL_FRAME)) {
+                cir.setReturnValue(true);
+            }
+
+            if (CarpetTubeAdditionSettings.movableSpawners && state.isOf(Blocks.SPAWNER)) {
+                cir.setReturnValue(true);
+            }
+
+            //#if MC >= 12000
+            if (CarpetTubeAdditionSettings.movableSpawners && state.isOf(Blocks.TRIAL_SPAWNER)) {
+                cir.setReturnValue(true);
+            }
+            //#endif
         }
 
         //#if MC >= 11900
