@@ -21,7 +21,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
-            //$$ desc = "Make fungus grow by random tick.",
+            //$$ desc = "Make fungus able to grow by random tick.",
             //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
@@ -87,4 +87,24 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean movableRespawnAnchor = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Make ender pearls able to load chunks when it is flying.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean enderPearlChunkLoader = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, RuleCategory.CREATIVE, CTA, PORT}
+            //#else
+            //$$ desc = "Make note blocks able to load chunks when play it.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, RuleCategory.CREATIVE, CTA, PORT}
+            //#endif
+    )
+    public static boolean noteBlockChunkLoader = false;
 }
