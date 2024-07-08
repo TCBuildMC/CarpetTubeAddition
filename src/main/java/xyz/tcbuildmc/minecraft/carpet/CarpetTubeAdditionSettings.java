@@ -22,7 +22,7 @@ public class CarpetTubeAdditionSettings {
             categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
             //$$ desc = "Make fungus grow by random tick.",
-            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
     public static boolean growableFungus = false;
@@ -56,8 +56,35 @@ public class CarpetTubeAdditionSettings {
             categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
             //$$ desc = "Use shears item to get the real tall plant items.",
-            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
     public static boolean harvestableTallPlant = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.EXPERIMENTAL, CTA, PORT}
+            //#else
+            //$$ desc = "Make pistons able to move enderchests. Requires `movableBlockEntities`.",
+            //$$ category = {RuleCategory.EXPERIMENTAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean movableEnderChest = false;
+
+    //#if MC >= 11900
+    @Rule(
+            categories = {RuleCategory.EXPERIMENTAL, RuleCategory.SURVIVAL, CTA}
+    )
+    public static boolean movableReinforcedDeepslate = false;
+    //#endif
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.EXPERIMENTAL, CTA}
+            //#else
+            //$$ desc = "Make pistons able to move respawn anchors. Requires `movableBlockEntities`.",
+            //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
+            //#endif
+    )
+    public static boolean movableRespawnAnchor = false;
 }

@@ -1,4 +1,4 @@
-package xyz.tcbuildmc.minecraft.carpet.mixin.rule.growableFungus;
+package xyz.tcbuildmc.minecraft.carpet.mixin.helper;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;

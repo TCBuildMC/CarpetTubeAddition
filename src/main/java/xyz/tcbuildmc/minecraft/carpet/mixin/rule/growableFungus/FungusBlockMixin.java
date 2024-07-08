@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
+import xyz.tcbuildmc.minecraft.carpet.mixin.helper.AbstractBlockMixin;
 
 /**
  * 移植自 JankAddons

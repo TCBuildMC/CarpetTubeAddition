@@ -7,9 +7,10 @@
   "mixins": [
     "access.block.ObServerBlockMixin",
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
-    "rule.growableFungus.AbstractBlockMixin",
+    "helper.AbstractBlockMixin",
     "rule.growableFungus.FungusBlockMixin",
-    "rule.harvestableTallPlant.TallPlantBlockMixin"
+    "rule.harvestableTallPlant.TallPlantBlockMixin",
+    "rule.moreMovableBlocks.PistonBlockMixin"
   ],
   "client": [
   ],
