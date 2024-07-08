@@ -107,4 +107,12 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean noteBlockChunkLoader = false;
+
+    //#if MC < 11900
+    //$$ @Rule(
+    //$$         desc = "Minecart will drop itself (Exclude items inside).",
+    //$$         category = {RuleCategory.SURVIVAL, RuleCategory.CREATIVE, CTA, PORT}
+    //$$ )
+    //$$ public static boolean modifyMinecartDrop = false;
+    //#endif
 }

@@ -13,6 +13,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 
+/**
+ * 移植自 JankAddons
+ */
 @Mixin(PistonBlock.class)
 public abstract class PistonBlockMixin {
     @Inject(

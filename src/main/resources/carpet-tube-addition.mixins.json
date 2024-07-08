@@ -12,6 +12,7 @@
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
     "rule.growableFungus.FungusBlockMixin",
     "rule.harvestableTallPlant.TallPlantBlockMixin",
+    "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin"
   ],
   "client": [
