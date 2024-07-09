@@ -6,9 +6,11 @@
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
     "access.block.ObServerBlockMixin",
-    "helper.AbstractBlockMixin",
+    "access.entity.EntityMixin",
+    "helper.block.AbstractBlockMixin",
     "rule.chunkLoader.EnderPearlEntityMixin",
     "rule.chunkLoader.NoteBlockMixin",
+    "rule.creativeOneHitKill.PlayerEntityMixin",
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
     "rule.growableFungus.FungusBlockMixin",
     "rule.harvestableTallPlant.TallPlantBlockMixin",

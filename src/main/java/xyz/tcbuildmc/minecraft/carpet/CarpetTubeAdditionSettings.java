@@ -136,4 +136,14 @@ public class CarpetTubeAdditionSettings {
     //$$ )
     //$$ public static boolean modifyMinecartDrop = false;
     //#endif
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.CREATIVE, CTA, PORT}
+            //#else
+            //$$ desc = "Make note blocks able to load chunks when play it.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.CREATIVE, CTA, PORT}
+            //#endif
+    )
+    public static boolean creativeOneHitKill = false;
 }

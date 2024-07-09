@@ -1,4 +1,4 @@
-package xyz.tcbuildmc.minecraft.carpet.mixin.helper;
+package xyz.tcbuildmc.minecraft.carpet.mixin.helper.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
