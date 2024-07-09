@@ -149,21 +149,31 @@ public class CarpetTubeAdditionSettings {
 
     @Rule(
             //#if MC >= 11900
-            categories = {RuleCategory.FEATURE, CTA, PORT}
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
             //$$ desc = "Bubble columns will push or pull XP orb entities like with other entities and items.",
-            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
     public static boolean xpOrbColumnInteraction = false;
 
     @Rule(
             //#if MC >= 11900
-            categories = {RuleCategory.FEATURE, CTA, PORT}
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
             //$$ desc = "Endermen will not be angry when you see them.",
-            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
     public static boolean passiveEnderman = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Endermen will only spawn in the end.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean endermanOnlySpawnInTheEnd = false;
 }
