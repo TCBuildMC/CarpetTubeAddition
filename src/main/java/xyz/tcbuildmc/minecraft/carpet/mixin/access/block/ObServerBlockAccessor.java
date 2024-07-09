@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(ObserverBlock.class)
-public interface ObServerBlockMixin {
+public interface ObServerBlockAccessor {
     @Invoker("scheduledTick")
     void invokeTick(BlockState state, ServerWorld world, BlockPos pos, Random random);
 }

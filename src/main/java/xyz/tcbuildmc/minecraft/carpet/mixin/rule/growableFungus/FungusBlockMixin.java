@@ -15,13 +15,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
-import xyz.tcbuildmc.minecraft.carpet.mixin.helper.block.AbstractBlockMixin;
+import xyz.tcbuildmc.minecraft.carpet.mixin.helper.block.AbstractBlockHelper;
 
 /**
  * 移植自 JankAddons
  */
 @Mixin(FungusBlock.class)
-public abstract class FungusBlockMixin extends AbstractBlockMixin {
+public abstract class FungusBlockMixin extends AbstractBlockHelper {
     @Shadow
     public abstract void grow(ServerWorld world, Random random, BlockPos pos, BlockState state);
 

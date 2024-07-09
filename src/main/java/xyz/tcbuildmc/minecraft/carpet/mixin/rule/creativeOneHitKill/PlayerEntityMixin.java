@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
-import xyz.tcbuildmc.minecraft.carpet.mixin.access.entity.EntityMixin;
+import xyz.tcbuildmc.minecraft.carpet.mixin.access.entity.EntityAccessor;
 
 import java.util.Arrays;
 import java.util.List;
@@ -56,7 +56,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     )
     private void cta$creativeOneHitKill$onAttack(Entity target, CallbackInfo ci) {
         if (CarpetTubeAdditionSettings.creativeOneHitKill) {
-            World world = ((EntityMixin) this).getWorld();
+            World world = ((EntityAccessor) this).getWorld();
 
             if (!world.isClient() &&
                     this.abilities.creativeMode &&

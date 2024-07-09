@@ -5,9 +5,10 @@
   "plugin": "xyz.tcbuildmc.minecraft.carpet.util.mixin.CarpetTubeAdditionMixinPlugin",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
-    "access.block.ObServerBlockMixin",
-    "access.entity.EntityMixin",
-    "helper.block.AbstractBlockMixin",
+    "access.block.ObServerBlockAccessor",
+    "access.entity.EntityAccessor",
+    "access.entity.ExperienceOrbAccessor",
+    "helper.block.AbstractBlockHelper",
     "rule.chunkLoader.EnderPearlEntityMixin",
     "rule.chunkLoader.NoteBlockMixin",
     "rule.creativeOneHitKill.PlayerEntityMixin",
@@ -15,7 +16,8 @@
     "rule.growableFungus.FungusBlockMixin",
     "rule.harvestableTallPlant.TallPlantBlockMixin",
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
-    "rule.moreMovableBlocks.PistonBlockMixin"
+    "rule.moreMovableBlocks.PistonBlockMixin",
+    "rule.bubbleColumnInteractsXPOrb.ExperienceOrbEntityMixin"
   ],
   "client": [
   ],

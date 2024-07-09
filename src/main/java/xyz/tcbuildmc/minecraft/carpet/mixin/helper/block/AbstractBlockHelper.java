@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(AbstractBlock.class)
-public abstract class AbstractBlockMixin {
+public abstract class AbstractBlockHelper {
     @Mutable
     @Shadow
     @Final

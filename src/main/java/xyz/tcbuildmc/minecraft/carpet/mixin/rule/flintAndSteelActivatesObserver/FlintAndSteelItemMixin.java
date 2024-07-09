@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
-import xyz.tcbuildmc.minecraft.carpet.mixin.access.block.ObServerBlockMixin;
+import xyz.tcbuildmc.minecraft.carpet.mixin.access.block.ObServerBlockAccessor;
 
 /**
  * 移植自 Carpet MCT Addition
@@ -37,7 +37,7 @@ public abstract class FlintAndSteelItemMixin {
                 BlockState blockState = world.getBlockState(blockPos);
 
                 if (blockState.isOf(Blocks.OBSERVER) && player != null && !player.isSneaking()) {
-                    ((ObServerBlockMixin) (ObserverBlock) blockState.getBlock()).invokeTick(
+                    ((ObServerBlockAccessor) (ObserverBlock) blockState.getBlock()).invokeTick(
                             blockState, ((ServerWorld) context.getWorld()), blockPos, context.getWorld().getRandom());
 
                     cir.setReturnValue(ActionResult.SUCCESS);

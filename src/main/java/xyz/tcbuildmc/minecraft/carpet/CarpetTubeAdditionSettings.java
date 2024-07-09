@@ -141,9 +141,19 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, RuleCategory.CREATIVE, CTA, PORT}
             //#else
-            //$$ desc = "Make note blocks able to load chunks when play it.",
+            //$$ desc = "One hit to kill entities! (Only Creative mode)",
             //$$ category = {RuleCategory.FEATURE, RuleCategory.CREATIVE, CTA, PORT}
             //#endif
     )
     public static boolean creativeOneHitKill = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Bubble columns will push or pull XP orb entities like with other entities and items.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean xpOrbColumnInteraction = false;
 }
