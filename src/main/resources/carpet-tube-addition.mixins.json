@@ -9,6 +9,7 @@
     "access.entity.EntityAccessor",
     "access.entity.ExperienceOrbAccessor",
     "helper.block.AbstractBlockHelper",
+    "rule.bubbleColumnInteractsXPOrb.ExperienceOrbEntityMixin",
     "rule.chunkLoader.EnderPearlEntityMixin",
     "rule.chunkLoader.NoteBlockMixin",
     "rule.creativeOneHitKill.PlayerEntityMixin",
@@ -17,7 +18,7 @@
     "rule.harvestableTallPlant.TallPlantBlockMixin",
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
-    "rule.bubbleColumnInteractsXPOrb.ExperienceOrbEntityMixin"
+    "rule.passiveEnderman.EndermanEntityMixin"
   ],
   "client": [
   ],
