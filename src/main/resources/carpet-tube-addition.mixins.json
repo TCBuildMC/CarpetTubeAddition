@@ -19,7 +19,8 @@
     "rule.harvestableTallPlant.TallPlantBlockMixin",
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
-    "rule.passiveEnderman.EndermanEntityMixin"
+    "rule.passiveEnderman.EndermanEntityMixin",
+    "rule.spawnEggsWithNoAI.SpawnEggItemMixin"
   ],
   "client": [
   ],

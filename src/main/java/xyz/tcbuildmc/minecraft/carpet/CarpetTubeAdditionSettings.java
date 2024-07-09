@@ -176,4 +176,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean endermanOnlySpawnInTheEnd = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Spawn mobs with spawn egg items will not have AI.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean spawnEggsWithNoAI = false;
 }
