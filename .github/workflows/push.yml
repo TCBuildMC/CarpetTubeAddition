@@ -53,7 +53,7 @@ jobs:
         with:
           name: CarpetTubeAddition-${{ steps.prop_info.outputs.mod_version }}+${{ env.SHORT_SHA }}
           path: |
-            versions/*/build/libs/
+            versions/*/build/libs/*.jar
             
       - name: Create Release
         if: github.repository_owner == 'TCBuildMC' && contains(github.event.head_commit.message, '[publish skip]') == false
@@ -61,7 +61,7 @@ jobs:
         with:
           prerelease: true
           files: |
-            versions/*/build/libs/
+            versions/*/build/libs/*.jar
           name: "CarpetTubeAddition-${{ steps.prop_info.outputs.mod_version }}+${{ env.SHORT_SHA }}"
           tag_name: "${{ steps.prop_info.outputs.mod_version }}+${{ env.SHORT_SHA }}"
           target_commitish: ${{ github.event.ref }}
