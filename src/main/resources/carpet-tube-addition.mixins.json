@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "xyz.tcbuildmc.minecraft.carpet.mixin",
   "plugin": "xyz.tcbuildmc.minecraft.carpet.util.mixin.CarpetTubeAdditionMixinPlugin",
-  "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
+  "compatibilityLevel": "JAVA_8",
   "mixins": [
     "access.block.ObServerBlockAccessor",
     "access.entity.EntityAccessor",

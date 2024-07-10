@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 
 /**
- * 移植自1 Carpet Addons Not Found
+ * 移植自 Carpet Addons Not Found
  */
 @Mixin(StonecutterBlock.class)
 public abstract class StonecuttorBlockMixin extends Block {

@@ -22,7 +22,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#else
-            //$$ desc = "Make fungus able to grow by random tick.",
+            //$$ desc = "Fungus will grow by random ticks.",
             //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
             //#endif
     )
@@ -68,7 +68,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.EXPERIMENTAL, CTA, PORT, NOT_VANILLA}
             //#else
-            //$$ desc = "Make pistons able to move enderchests. Requires `movableBlockEntities`.",
+            //$$ desc = "Pistons will move the ender chests. Requires `movableBlockEntities`.",
             //$$ category = {RuleCategory.EXPERIMENTAL, CTA, PORT}
             //#endif
     )
@@ -85,7 +85,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.EXPERIMENTAL, CTA}
             //#else
-            //$$ desc = "Make pistons able to move respawn anchors. Requires `movableBlockEntities`.",
+            //$$ desc = "Pistons will move the respawn anchors. Requires `movableBlockEntities`.",
             //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
             //#endif
     )
@@ -95,7 +95,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.EXPERIMENTAL, CTA, NOT_VANILLA}
             //#else
-            //$$ desc = "Make pistons able to move end portal frame blocks. Requires `movableBlockEntities`.",
+            //$$ desc = "Pistons will move the end portal frame blocks. Requires `movableBlockEntities`.",
             //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
             //#endif
     )
@@ -105,7 +105,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.EXPERIMENTAL, CTA, NOT_VANILLA}
             //#else
-            //$$ desc = "Make pistons able to move spawner blocks. Requires `movableBlockEntities`.",
+            //$$ desc = "Pistons will move the spawner blocks. Requires `movableBlockEntities`.",
             //$$ category = {RuleCategory.EXPERIMENTAL, CTA}
             //#endif
     )
@@ -115,7 +115,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, CTA, PORT}
             //#else
-            //$$ desc = "Make ender pearls able to load chunks when it is flying.",
+            //$$ desc = "Ender pearls will load chunks when it is flying.",
             //$$ category = {RuleCategory.FEATURE, CTA, PORT}
             //#endif
     )
@@ -125,7 +125,7 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, RuleCategory.CREATIVE, CTA, PORT}
             //#else
-            //$$ desc = "Make note blocks able to load chunks when play it.",
+            //$$ desc = "Note blocks will load chunks when play it.",
             //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, RuleCategory.CREATIVE, CTA, PORT}
             //#endif
     )
