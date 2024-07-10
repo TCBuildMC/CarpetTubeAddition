@@ -36,7 +36,8 @@ public class CarpetTubeAdditionSettings {
             //$$ category = {RuleCategory.FEATURE, CTA, PORT},
             //#endif
 
-            options = {"0", "144"}
+            options = {"0", "144"},
+            strict = false
     )
     public static int fungusGrowthChance = 144;
 
@@ -48,7 +49,8 @@ public class CarpetTubeAdditionSettings {
             //$$ category = {RuleCategory.FEATURE, CTA, PORT},
             //#endif
 
-            options = {"1", "7", "8", "14", "15"}
+            options = {"1", "7", "8", "14", "15"},
+            strict = false
     )
     public static int fungusGrowthMinLightLevel = 8;
 
@@ -186,4 +188,17 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean spawnEggsWithNoAI = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT},
+            //#else
+            //$$ desc = "Entities will be hurt/heal when stepping on the redstone-powered stonecuttor blocks.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT},
+            //#endif
+
+            options = {"-1", "0", "1"},
+            strict = false
+    )
+    public static float stonecuttorDoDamage = 0.0f;
 }

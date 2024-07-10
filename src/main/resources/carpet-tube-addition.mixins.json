@@ -13,6 +13,7 @@
     "rule.chunkLoader.EnderPearlEntityMixin",
     "rule.chunkLoader.NoteBlockMixin",
     "rule.creativeOneHitKill.PlayerEntityMixin",
+    "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
     "rule.endermanOnlySpawnInTheEnd.SpawnHelperMixin",
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
     "rule.growableFungus.FungusBlockMixin",
