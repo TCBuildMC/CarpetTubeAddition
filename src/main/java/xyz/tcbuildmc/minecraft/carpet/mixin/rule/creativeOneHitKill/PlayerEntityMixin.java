@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionMod;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 import xyz.tcbuildmc.minecraft.carpet.mixin.access.entity.EntityAccessor;
 
@@ -26,7 +27,7 @@ import java.util.List;
  * 移植自 Carpet Addons Not Found
  */
 @Mixin(PlayerEntity.class)
-public abstract class PlayerEntityMixin extends LivingEntity {
+public abstract class PlayerEntityMixin {
     @Shadow
     @Final
     private PlayerAbilities abilities;
@@ -40,28 +41,19 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             //#endif
     );
 
-    protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
-        super(entityType, world);
-    }
-
     @Inject(
             method = "attack",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/entity/Entity;handleAttack(Lnet/minecraft/entity/Entity;)Z",
-                    shift = At.Shift.BY,
-                    by = -2
-            ),
+            at = @At("HEAD"),
             cancellable = true
     )
     private void cta$creativeOneHitKill$onAttack(Entity target, CallbackInfo ci) {
-        if (CarpetTubeAdditionSettings.creativeOneHitKill) {
+        if (CarpetTubeAdditionSettings.creativeOneHitKill && target.isAttackable()) {
             World world = ((EntityAccessor) this).getWorld();
 
             if (!world.isClient() &&
-                    this.abilities.creativeMode &&
+                    abilities.creativeMode &&
                     EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR.test(target) &&
-                    excludedEntityTypes.contains(target.getType())) {
+                    !excludedEntityTypes.contains(target.getType())) {
 
                 if (target instanceof EnderDragonPart) {
                     EnderDragonEntity dragon = ((EnderDragonPart) target).owner;
