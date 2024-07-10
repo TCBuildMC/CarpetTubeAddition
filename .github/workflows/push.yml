@@ -66,3 +66,4 @@ jobs:
           tag_name: "${{ steps.prop_info.outputs.mod_version }}+${{ env.SHORT_SHA }}"
           target_commitish: ${{ github.event.ref }}
           generate_release_notes: true
+          token: ${{ secrets.RELEASE_TOKEN }}
