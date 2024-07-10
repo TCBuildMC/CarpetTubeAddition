@@ -201,4 +201,34 @@ public class CarpetTubeAdditionSettings {
             strict = false
     )
     public static float stonecuttorDoDamage = 0.0f;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "Mobs will not spawn in overworld.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean disableMobSpawningOverworld = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "Mobs will not spawn in nether.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean disableMobSpawningNether = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "Mobs will not spawn in the end.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean disableMobSpawningTheEnd = false;
 }

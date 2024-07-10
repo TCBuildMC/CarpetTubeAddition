@@ -13,7 +13,7 @@
     "rule.chunkLoader.EnderPearlEntityMixin",
     "rule.chunkLoader.NoteBlockMixin",
     "rule.creativeOneHitKill.PlayerEntityMixin",
-    "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
+    "rule.disableMobSpawning.SpawnHelperMixin",
     "rule.endermanOnlySpawnInTheEnd.SpawnHelperMixin",
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
     "rule.growableFungus.FungusBlockMixin",
@@ -21,7 +21,8 @@
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
     "rule.passiveEnderman.EndermanEntityMixin",
-    "rule.spawnEggsWithNoAI.SpawnEggItemMixin"
+    "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
+    "rule.stonecuttorDoDamage.StonecuttorBlockMixin"
   ],
   "client": [
   ],
