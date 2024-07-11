@@ -231,4 +231,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean disableMobSpawningTheEnd = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "All XP will be dropped when player's death.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean playerDeathDropAllXP = false;
 }

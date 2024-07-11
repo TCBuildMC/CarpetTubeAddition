@@ -8,6 +8,7 @@
     "access.block.ObServerBlockAccessor",
     "access.entity.EntityAccessor",
     "access.entity.ExperienceOrbAccessor",
+    "access.entity.LivingEntityAccessor",
     "helper.block.AbstractBlockHelper",
     "rule.bubbleColumnInteractsXPOrb.ExperienceOrbEntityMixin",
     "rule.chunkLoader.EnderPearlEntityMixin",
@@ -21,6 +22,7 @@
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
     "rule.passiveEnderman.EndermanEntityMixin",
+    "rule.playerDeathDropAllXP.LivingEntityMixin",
     "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
     "rule.stonecuttorDoDamage.StonecuttorBlockMixin"
   ],
