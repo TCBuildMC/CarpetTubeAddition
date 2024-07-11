@@ -23,6 +23,8 @@
     "rule.moreMovableBlocks.PistonBlockMixin",
     "rule.passiveEnderman.EndermanEntityMixin",
     "rule.playerDeathDropAllXP.LivingEntityMixin",
+    "rule.replaceableFlowers.FlowerBlockMixin",
+    "rule.replaceableFlowers.TallFlowerBlockMixin",
     "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
     "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
     "rule.toggleableEyeOnEndPortalFrame.EndPortalFrameBlockMixin"

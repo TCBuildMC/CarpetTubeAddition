@@ -251,4 +251,21 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean toggleableEyeOnEndPortalFrame = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Right-click flower block with other flower to replace it.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static ReplaceableFlowersOptions replaceableFlowers = ReplaceableFlowersOptions.FALSE;
+
+    public enum ReplaceableFlowersOptions {
+        FALSE,
+        SMALL_FLOWERS_ONLY,
+        TALL_FLOWERS_ONLY,
+        TRUE
+    }
 }

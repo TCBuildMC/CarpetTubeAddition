@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
+import xyz.tcbuildmc.minecraft.carpet.util.item.ItemStackUtils;
 
 /**
  * 移植自 JankAddons
@@ -41,11 +42,7 @@ public abstract class TallPlantBlockMixin {
 
     @Unique
     private boolean cta$harvestableTallPlant$isValidItem(ItemStack stack) {
-        //#if MC >= 11700
-        return stack.isOf(Items.SHEARS);
-        //#else
-        //$$ return stack.isItemEqual(Items.SHEARS.getDefaultStack());
-        //#endif
+        return ItemStackUtils.is(stack, Items.SHEARS);
     }
 
     @Unique

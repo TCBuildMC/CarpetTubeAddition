@@ -22,5 +22,6 @@
   "carpet.rule.disableMobSpawningNether.desc": "Mobs will not spawn in nether.",
   "carpet.rule.disableMobSpawningTheEnd.desc": "Mobs will not spawn in the end.",
   "carpet.rule.playerDeathDropAllXP.desc": "All XP will be dropped when player's death.",
-  "carpet.rule.toggleableEyeOnEndPortalFrame.desc": "End portal frame blocks will drop the eye on them when they have eye."
+  "carpet.rule.toggleableEyeOnEndPortalFrame.desc": "End portal frame blocks will drop the eye on them when they have eye.",
+  "carpet.rule.replaceableFlowers.desc": "Right-click flower block with other flower to replace it."
 }
