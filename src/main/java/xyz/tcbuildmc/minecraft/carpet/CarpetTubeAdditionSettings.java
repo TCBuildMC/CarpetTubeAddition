@@ -241,4 +241,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean playerDeathDropAllXP = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#else
+            //$$ desc = "End portal frame blocks will drop the eye on them when they have eye.",
+            //$$ category = {RuleCategory.FEATURE, RuleCategory.SURVIVAL, CTA, PORT}
+            //#endif
+    )
+    public static boolean toggleableEyeOnEndPortalFrame = false;
 }

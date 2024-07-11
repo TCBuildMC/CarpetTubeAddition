@@ -20,5 +20,7 @@
   "carpet.rule.stonecuttorDoDamage.desc": "Entities will be hurt/heal when stepping on the redstone-powered stonecuttor blocks.",
   "carpet.rule.disableMobSpawningOverworld.desc": "Mobs will not spawn in overworld.",
   "carpet.rule.disableMobSpawningNether.desc": "Mobs will not spawn in nether.",
-  "carpet.rule.disableMobSpawningTheEnd.desc": "Mobs will not spawn in the end."
+  "carpet.rule.disableMobSpawningTheEnd.desc": "Mobs will not spawn in the end.",
+  "carpet.rule.playerDeathDropAllXP.desc": "All XP will be dropped when player's death.",
+  "carpet.rule.toggleableEyeOnEndPortalFrame.desc": "End portal frame blocks will drop the eye on them when they have eye."
 }

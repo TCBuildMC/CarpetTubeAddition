@@ -24,7 +24,8 @@
     "rule.passiveEnderman.EndermanEntityMixin",
     "rule.playerDeathDropAllXP.LivingEntityMixin",
     "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
-    "rule.stonecuttorDoDamage.StonecuttorBlockMixin"
+    "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
+    "rule.toggleableEyeOnEndPortalFrame.EndPortalFrameBlockMixin"
   ],
   "client": [
   ],
