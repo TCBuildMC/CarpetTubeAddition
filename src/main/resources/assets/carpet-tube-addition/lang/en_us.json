@@ -27,5 +27,6 @@
   "carpet.rule.replaceableFlowersInPot.desc": "Right-click pot block with other flower to replace the flower inside.",
   "carpet.rule.pickFlowersFromPot.desc": "Right-click pot block to take the flower inside.",
   "carpet.rule.disablePhantomSpawningForCreative.desc": "Phantoms will not spawn for creative players.",
-  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "Phantoms will not spawn in mushroom island."
+  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "Phantoms will not spawn in mushroom island.",
+  "carpet.rule.drownedUseEnchantedTridents.desc": "Allows tridents thrown by drowned to use the enchantments on the trident held by said drowned."
 }

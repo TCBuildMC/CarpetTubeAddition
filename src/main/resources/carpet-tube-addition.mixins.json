@@ -15,6 +15,7 @@
     "rule.chunkLoader.NoteBlockMixin",
     "rule.creativeOneHitKill.PlayerEntityMixin",
     "rule.disableMobSpawning.SpawnHelperMixin",
+    "rule.drownedUseEnchantedTridents.DrownedEntityMixin",
     "rule.endermanOnlySpawnInTheEnd.SpawnHelperMixin",
     "rule.flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
     "rule.growableFungus.FungusBlockMixin",

@@ -310,4 +310,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean disablePhantomSpawningInMushroomIsland = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Allows tridents thrown by drowned to use the enchantments on the trident held by said drowned.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean drownedUseEnchantedTridents = false;
 }

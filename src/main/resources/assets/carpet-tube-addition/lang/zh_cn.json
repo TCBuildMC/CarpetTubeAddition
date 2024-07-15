@@ -27,5 +27,6 @@
   "carpet.rule.replaceableFlowersInPot.desc": "右键替换花盆里的花",
   "carpet.rule.pickFlowersFromPot.desc": "右键从花盆里拿花",
   "carpet.rule.disablePhantomSpawningForCreative.desc": "创造模式不生成幻翼",
-  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "蘑菇岛不生成幻翼"
+  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "蘑菇岛不生成幻翼",
+  "carpet.rule.drownedUseEnchantedTridents.desc": "溺尸可使用附魔三叉戟"
 }
