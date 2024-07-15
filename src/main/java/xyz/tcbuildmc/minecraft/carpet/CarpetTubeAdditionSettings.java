@@ -320,4 +320,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean drownedUseEnchantedTridents = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Loyalty tridents will return to their owner when thrown into the void.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean loyaltyTridentsReturnInVoid = false;
 }

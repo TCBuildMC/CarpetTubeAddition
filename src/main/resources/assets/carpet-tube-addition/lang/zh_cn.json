@@ -28,5 +28,6 @@
   "carpet.rule.pickFlowersFromPot.desc": "右键从花盆里拿花",
   "carpet.rule.disablePhantomSpawningForCreative.desc": "创造模式不生成幻翼",
   "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "蘑菇岛不生成幻翼",
-  "carpet.rule.drownedUseEnchantedTridents.desc": "溺尸可使用附魔三叉戟"
+  "carpet.rule.drownedUseEnchantedTridents.desc": "溺尸可使用附魔三叉戟",
+  "carpet.rule.loyaltyTridentsReturnInVoid.desc": "忠诚++ （在虚空中还能回来）"
 }
