@@ -22,9 +22,12 @@
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
     "rule.passiveEnderman.EndermanEntityMixin",
+    "rule.phantomSpawnerTweak.PhantomSpawnerMixin",
+    "rule.pickFlowersFromPot.FlowerPotBlockMixin",
     "rule.playerDeathDropAllXP.LivingEntityMixin",
     "rule.replaceableFlowers.FlowerBlockMixin",
     "rule.replaceableFlowers.TallFlowerBlockMixin",
+    "rule.replaceableFlowersInPot.FlowerPotBlockMixin",
     "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
     "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
     "rule.toggleableEyeOnEndPortalFrame.EndPortalFrameBlockMixin"

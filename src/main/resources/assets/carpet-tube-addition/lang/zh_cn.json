@@ -23,5 +23,9 @@
   "carpet.rule.disableMobSpawningTheEnd.desc": "末地伪和平",
   "carpet.rule.playerDeathDropAllXP.desc": "玩家死亡时掉落全部经验",
   "carpet.rule.toggleableEyeOnEndPortalFrame.desc": "末地传送门框架可切换末影之眼",
-  "carpet.rule.replaceableFlowers.desc": "右键可替换花"
+  "carpet.rule.replaceableFlowers.desc": "右键可替换花",
+  "carpet.rule.replaceableFlowersInPot.desc": "右键替换花盆里的花",
+  "carpet.rule.pickFlowersFromPot.desc": "右键从花盆里拿花",
+  "carpet.rule.disablePhantomSpawningForCreative.desc": "创造模式不生成幻翼",
+  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "蘑菇岛不生成幻翼"
 }

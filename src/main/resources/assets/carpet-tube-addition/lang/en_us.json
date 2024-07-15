@@ -23,5 +23,9 @@
   "carpet.rule.disableMobSpawningTheEnd.desc": "Mobs will not spawn in the end.",
   "carpet.rule.playerDeathDropAllXP.desc": "All XP will be dropped when player's death.",
   "carpet.rule.toggleableEyeOnEndPortalFrame.desc": "End portal frame blocks will drop the eye on them when they have eye.",
-  "carpet.rule.replaceableFlowers.desc": "Right-click flower block with other flower to replace it."
+  "carpet.rule.replaceableFlowers.desc": "Right-click flower block with other flower to replace it.",
+  "carpet.rule.replaceableFlowersInPot.desc": "Right-click pot block with other flower to replace the flower inside.",
+  "carpet.rule.pickFlowersFromPot.desc": "Right-click pot block to take the flower inside.",
+  "carpet.rule.disablePhantomSpawningForCreative.desc": "Phantoms will not spawn for creative players.",
+  "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "Phantoms will not spawn in mushroom island."
 }
