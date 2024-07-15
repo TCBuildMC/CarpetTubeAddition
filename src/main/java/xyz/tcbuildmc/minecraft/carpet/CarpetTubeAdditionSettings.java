@@ -343,4 +343,14 @@ public class CarpetTubeAdditionSettings {
     )
     public static boolean impalingAffectsMobsInWaterOrRain = false;
     //#endif
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Phantoms will not spawn when mobcap is full.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean disablePhantomSpawningWhenMobCapIsFull = false;
 }

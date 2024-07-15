@@ -1,5 +1,6 @@
 package xyz.tcbuildmc.minecraft.carpet.mixin.rule.phantomSpawnerTweak;
 
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.RegistryKey;
 
 //#if MC >= 11800
@@ -9,6 +10,8 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.ChunkPos;
+import net.minecraft.world.SpawnHelper;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.spawner.PhantomSpawner;
@@ -17,6 +20,8 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
+import xyz.tcbuildmc.minecraft.carpet.helper.ChunkManagerHelper;
+import xyz.tcbuildmc.minecraft.carpet.mixin.access.world.SpawnHelperInfoAccessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,6 +71,21 @@ public abstract class PhantomSpawnerMixin {
                 //$$ biome.getCategory().equals(Biome.Category.MUSHROOM)
                 //#endif
         ) {
+
+            return false;
+        }
+
+        //#if MC >= 11800
+        ChunkPos chunkPos = player.getChunkPos();
+        //#endif
+        SpawnHelper.Info info = ChunkManagerHelper.getInfo();
+
+        if (CarpetTubeAdditionSettings.disablePhantomSpawningWhenMobCapIsFull &&
+                !((SpawnHelperInfoAccessor) info).isMobCapNotFull(SpawnGroup.MONSTER
+                        //#if MC >= 11800
+                        , chunkPos
+                        //#endif
+                )) {
 
             return false;
         }
