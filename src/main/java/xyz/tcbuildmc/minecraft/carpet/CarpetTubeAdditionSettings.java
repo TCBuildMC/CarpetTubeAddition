@@ -330,4 +330,17 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean loyaltyTridentsReturnInVoid = false;
+
+    // FIXME 1.21
+    //#if MC < 12100
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Apply the Impaling enchantment on any mob that is in water or rain.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean impalingAffectsMobsInWaterOrRain = false;
+    //#endif
 }

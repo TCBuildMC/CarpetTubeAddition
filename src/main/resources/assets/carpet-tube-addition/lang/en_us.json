@@ -29,5 +29,6 @@
   "carpet.rule.disablePhantomSpawningForCreative.desc": "Phantoms will not spawn for creative players.",
   "carpet.rule.disablePhantomSpawningInMushroomIsland.desc": "Phantoms will not spawn in mushroom island.",
   "carpet.rule.drownedUseEnchantedTridents.desc": "Allows tridents thrown by drowned to use the enchantments on the trident held by said drowned.",
-  "carpet.rule.loyaltyTridentsReturnInVoid.desc": "Loyalty tridents will return to their owner when thrown into the void."
+  "carpet.rule.loyaltyTridentsReturnInVoid.desc": "Loyalty tridents will return to their owner when thrown into the void.",
+  "carpet.rule.impalingAffectsMobsInWaterOrRain.desc": "Apply the Impaling enchantment on any mob that is in water or rain."
 }
