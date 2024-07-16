@@ -24,8 +24,10 @@ public abstract class PotionItemMixin {
                     target = "Lnet/minecraft/entity/LivingEntity;addStatusEffect(Lnet/minecraft/entity/effect/StatusEffectInstance;)Z"
             )
     )
-    private static boolean cta$stackingPotionDuration$addEffect(LivingEntity instance, StatusEffectInstance effect) {
-        if (CarpetTubeAdditionSettings.stackingPotionDuration) {
+    private static boolean cta$stackingPotionDuration$normalPotion$addEffect(LivingEntity instance, StatusEffectInstance effect) {
+        if (CarpetTubeAdditionSettings.stackingPotionDuration == CarpetTubeAdditionSettings.StackingPotionDurationOption.NORMAL_POTION ||
+                CarpetTubeAdditionSettings.stackingPotionDuration == CarpetTubeAdditionSettings.StackingPotionDurationOption.TRUE) {
+
             StatusEffectInstance oldEffect = instance.getStatusEffect(effect.getEffectType());
 
             int oldDuration = 0;

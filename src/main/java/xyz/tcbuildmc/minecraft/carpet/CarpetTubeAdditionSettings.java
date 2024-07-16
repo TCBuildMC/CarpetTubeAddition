@@ -398,5 +398,13 @@ public class CarpetTubeAdditionSettings {
             //$$ category = {RuleCategory.FEATURE, CTA, PORT}
             //#endif
     )
-    public static boolean stackingPotionDuration = false;
+    public static StackingPotionDurationOption stackingPotionDuration = StackingPotionDurationOption.FALSE;
+
+    public enum StackingPotionDurationOption {
+        FALSE,
+        NORMAL_POTION,
+        SPLASH_POTION,
+        LINGERING_POTION,
+        TRUE
+    }
 }

@@ -39,6 +39,8 @@
     "rule.replaceableFlowers.TallFlowerBlockMixin",
     "rule.replaceableFlowersInPot.FlowerPotBlockMixin",
     "rule.spawnEggsWithNoAI.SpawnEggItemMixin",
+    "rule.stackingPotionDuration.AreaEffectCloudEntityMixin",
+    "rule.stackingPotionDuration.PotionEntityMixin",
     "rule.stackingPotionDuration.PotionItemMixin",
     "rule.stonecuttorDoDamage.StonecuttorBlockMixin",
     "rule.toggleableEyeOnEndPortalFrame.EndPortalFrameBlockMixin"
