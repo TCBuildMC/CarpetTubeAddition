@@ -13,7 +13,7 @@ import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 @Mixin(ProjectileUtil.class)
 public abstract class ProjectileUtilMixin {
     @Redirect(
-            //#if MC >= 11700
+            //#if MC >= 12000
             method = "getCollision(Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/entity/Entity;Ljava/util/function/Predicate;Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/world/World;FLnet/minecraft/world/RaycastContext$ShapeType;)Lnet/minecraft/util/hit/HitResult;",
             //#else
             //$$ method = "getCollision",
