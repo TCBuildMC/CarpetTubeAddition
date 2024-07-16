@@ -1,4 +1,4 @@
-package xyz.tcbuildmc.minecraft.carpet.mixin.rule.flintAndSteelActivatesObserver;
+package xyz.tcbuildmc.minecraft.carpet.mixin.rule.flintAndSteelBehavior;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -27,8 +27,8 @@ public abstract class FlintAndSteelItemMixin {
             at = @At("HEAD"),
             cancellable = true
     )
-    private void cta$flintAndSteelActivatesObserver$useOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
-        if (CarpetTubeAdditionSettings.flintAndSteelActivatesObserver) {
+    private void cta$flintAndSteelBehavior$useOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
+        if (CarpetTubeAdditionSettings.flintAndSteelBehavior == CarpetTubeAdditionSettings.FlintAndSteelBehaviors.OBSERVER_ONLY) {
             World world = context.getWorld();
 
             if (!world.isClient()) {

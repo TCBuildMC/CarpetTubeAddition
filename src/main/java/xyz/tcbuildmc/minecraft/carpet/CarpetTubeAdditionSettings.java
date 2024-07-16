@@ -12,11 +12,17 @@ public class CarpetTubeAdditionSettings {
             //#if MC >= 11900
             categories = {RuleCategory.FEATURE, CTA, PORT}
             //#else
-            //$$ desc = "Use flintAndSteel item to activate observer block.",
+            //$$ desc = "Use flintAndSteel item to redstone machines.",
             //$$ category = {RuleCategory.FEATURE, CTA, PORT}
             //#endif
     )
-    public static boolean flintAndSteelActivatesObserver = false;
+    public static FlintAndSteelBehaviors flintAndSteelBehavior = FlintAndSteelBehaviors.FALSE;
+
+    public enum FlintAndSteelBehaviors {
+        FALSE,
+        OBSERVER_ONLY,
+        TRUE
+    }
 
     @Rule(
             //#if MC >= 11900

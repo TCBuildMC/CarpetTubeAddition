@@ -1,5 +1,5 @@
 {
-  "carpet.rule.flintAndSteelActivatesObserver.desc": "Use flintAndSteel item to activate observer block.",
+  "carpet.rule.flintAndSteelBehavior.desc": "Use flintAndSteel item to activate redstone machines.",
   "carpet.rule.growableFungus.desc": "Fungus will grow by random ticks.",
   "carpet.rule.fungusGrowthChance.desc": "Chance for fungus growth. Also see `growableFungus`.",
   "carpet.rule.fungusGrowthMinLightLevel.desc": "Minimum light level for fungus growth (Include it). Also see `growableFungus`.",

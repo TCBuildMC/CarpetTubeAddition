@@ -1,5 +1,5 @@
 {
-  "carpet.rule.flintAndSteelActivatesObserver.desc": "打火石激活侦测器",
+  "carpet.rule.flintAndSteelBehavior.desc": "打火石激活红石元件",
   "carpet.rule.growableFungus.desc": "诡异菌/绯红菌生长随机刻",
   "carpet.rule.fungusGrowthChance.desc": "诡异菌/绯红菌生长几率",
   "carpet.rule.fungusGrowthMinLightLevel.desc": "诡异菌/绯红菌生长最低亮度",
