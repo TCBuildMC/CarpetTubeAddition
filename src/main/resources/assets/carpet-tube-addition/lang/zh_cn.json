@@ -33,5 +33,6 @@
   "carpet.rule.impalingAffectsMobsInWaterOrRain.desc": "激流++ （来自 BE，可以伤害在水中或雨中的怪物）",
   "carpet.rule.disablePhantomSpawningWhenMobCapIsFull.desc": "怪物上限满时不生成幻翼",
   "carpet.rule.projectileRaycastLength.desc": "改变投掷物的碰撞箱检查范围（原版是 0）",
-  "carpet.rule.potionInstantUse.desc": "药水秒喝"
+  "carpet.rule.potionInstantUse.desc": "药水秒喝",
+  "carpet.rule.stackingPotionDuration.desc": "药水时间堆叠"
 }

@@ -389,4 +389,14 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean potionInstantUse = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Combines the duration of potions.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean stackingPotionDuration = false;
 }

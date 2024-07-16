@@ -33,5 +33,6 @@
   "carpet.rule.impalingAffectsMobsInWaterOrRain.desc": "Apply the Impaling enchantment on any mob that is in water or rain.",
   "carpet.rule.disablePhantomSpawningWhenMobCapIsFull.desc": "Phantoms will not spawn when mobcap is full.",
   "carpet.rule.projectileRaycastLength.desc": "Changes the distance projectiles check for collisions. If set to 0 all Blocks to the destination will be checked which is the Vanilla behaviour.",
-  "carpet.rule.potionInstantUse.desc": "Potions can be drunk instantly."
+  "carpet.rule.potionInstantUse.desc": "Potions can be drunk instantly.",
+  "carpet.rule.stackingPotionDuration.desc": "Combines the duration of potions."
 }
