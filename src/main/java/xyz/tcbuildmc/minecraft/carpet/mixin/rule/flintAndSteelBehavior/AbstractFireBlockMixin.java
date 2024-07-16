@@ -10,6 +10,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.tcbuildmc.minecraft.carpet.CarpetTubeAdditionSettings;
 
+/**
+ * 移植自 <a href="https://github.com/whoImT/carpet-addons">whoImT/carpet-addons</a>
+ */
 @Mixin(AbstractFireBlock.class)
 public abstract class AbstractFireBlockMixin {
     @Inject(

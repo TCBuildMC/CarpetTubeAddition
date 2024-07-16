@@ -33,6 +33,7 @@
     "rule.phantomSpawnerTweak.ServerChunkManagerMixin",
     "rule.pickFlowersFromPot.FlowerPotBlockMixin",
     "rule.playerDeathDropAllXP.LivingEntityMixin",
+    "rule.projectileRaycastLength.ProjectileUtilMixin",
     "rule.replaceableFlowers.FlowerBlockMixin",
     "rule.replaceableFlowers.TallFlowerBlockMixin",
     "rule.replaceableFlowersInPot.FlowerPotBlockMixin",

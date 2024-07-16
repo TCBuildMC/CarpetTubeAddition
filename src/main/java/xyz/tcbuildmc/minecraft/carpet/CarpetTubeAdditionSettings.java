@@ -3,6 +3,12 @@ package xyz.tcbuildmc.minecraft.carpet;
 import carpet.api.settings.Rule;
 import carpet.api.settings.RuleCategory;
 
+//#if MC >= 11900
+import carpet.api.settings.Validators;
+//#else
+//$$ import carpet.settings.Validator;
+//#endif
+
 public class CarpetTubeAdditionSettings {
     public static final String CTA = "CTA";
     public static final String PORT = "port";
@@ -359,4 +365,18 @@ public class CarpetTubeAdditionSettings {
             //#endif
     )
     public static boolean disablePhantomSpawningWhenMobCapIsFull = false;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT, RuleCategory.OPTIMIZATION},
+            validators = {Validators.NonNegativeNumber.class},
+            //#else
+            //$$ desc = "Changes the distance projectiles check for collisions. If set to 0 all Blocks to the destination will be checked which is the Vanilla behaviour.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT, RuleCategory.OPTIMIZATION},
+            //$$ validate = {Validator.NONNEGATIVE_NUMBER.class},
+            //#endif
+            options = {"0", "200"},
+            strict = false
+    )
+    public static int projectileRaycastLength = 0;
 }
