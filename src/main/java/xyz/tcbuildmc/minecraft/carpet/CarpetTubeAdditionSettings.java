@@ -379,4 +379,14 @@ public class CarpetTubeAdditionSettings {
             strict = false
     )
     public static int projectileRaycastLength = 0;
+
+    @Rule(
+            //#if MC >= 11900
+            categories = {RuleCategory.FEATURE, CTA, PORT}
+            //#else
+            //$$ desc = "Potions can be drunk instantly.",
+            //$$ category = {RuleCategory.FEATURE, CTA, PORT}
+            //#endif
+    )
+    public static boolean potionInstantUse = false;
 }

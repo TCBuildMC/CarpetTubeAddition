@@ -25,6 +25,7 @@
     "rule.impalingAffectsMobsInWaterOrRain.MobEntityMixin",
     "rule.impalingAffectsMobsInWaterOrRain.PlayerEntityMixin",
     "rule.impalingAffectsMobsInWaterOrRain.TridentEntityMixin",
+    "rule.potionInstantUse.PotionItemMixin",
     "rule.loyaltyTridentsReturnInVoid.TridentEntityMixin",
     "rule.modifyMinecartDrop.AbstractMinecartEntityMixin",
     "rule.moreMovableBlocks.PistonBlockMixin",
